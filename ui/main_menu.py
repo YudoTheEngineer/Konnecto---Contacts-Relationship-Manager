@@ -20,7 +20,6 @@ def main_menu():
         menu_choice = int(input(" Select (1 - 12): "))
 
         if menu_choice > 0 and menu_choice < 13:
-            clear_screen()
             return menu_choice
 
         else:
