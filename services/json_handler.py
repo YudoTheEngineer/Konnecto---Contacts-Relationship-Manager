@@ -2,6 +2,18 @@ import json
 import os
 
 def init_database(JSON_PATH):
+    """
+    Mengecek apakah folder database dan file.json ada atau tidak
+
+    Args:
+        string JSON_PATH: Path untuk menyimpan database
+
+    Returns:
+        json.load(file): Load data JSON yang sudah ada
+
+    Raises:
+        None
+    """
     folder = os.path.dirname(JSON_PATH)
     if folder and not os.path.exists(folder):
         os.makedirs(folder)

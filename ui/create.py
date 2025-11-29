@@ -1,6 +1,31 @@
 from utils.alerts import *
 
 def create_form():
+    """
+    Form untuk pengisian data objek yang akan di simpan
+
+    Args:
+        None
+
+    Returns:
+        string: 
+            first_name: Nama depan objek
+            middle_name: Nama tengah objek
+            last_name: Nama belakang objek
+            phone_number: Nomor telepon objek
+            email: Email address objek
+            company: Perusahaan Tempat bekerja objek
+            position: Jabatan objek
+            birth_date: Tanggal lahir objek
+            note: Catatan tambahan untuk objek
+            social_media: Media sosial objek
+            category: Kategori objek
+        
+        boolean favourite: Apakah objek difavoritkan atau tidak
+
+    Raise:
+        None
+    """
     while True:
         print("=======================================")
         print("| Konnecto - Contact Relationship APP |")

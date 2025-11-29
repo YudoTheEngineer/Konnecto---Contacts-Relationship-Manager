@@ -1,6 +1,19 @@
 from utils.alerts import *
 
 def main_menu():
+    """
+    Konnecto Main Menu
+
+    Args:
+        None
+
+    Returns:
+        Int menu_choice: Pilihan pengguna pada bagian menu
+
+    Raises:
+        ValueError: Jika menu_choice tidak diisi dan atau menu_choice diisi selain angka
+    """
+
     print(""" 
 =======================================
 | Konnecto - Contact Relationship APP |

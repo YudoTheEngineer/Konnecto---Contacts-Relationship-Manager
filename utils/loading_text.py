@@ -3,6 +3,19 @@ import time
 import sys
 
 def loading(text=" Loading", duration=2):
+    """
+    Loading text
+
+    Args:
+        str text: Teks untuk ditampilkan sebagai loading text
+        int duration: Durasi loading text
+
+    Returns:
+        None
+    
+    Raises:
+        None
+    """
     end_time = time.time() + duration
     
     while time.time() < end_time:
