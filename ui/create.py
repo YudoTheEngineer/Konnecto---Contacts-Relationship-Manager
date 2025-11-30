@@ -43,7 +43,7 @@ def create_form():
             address = input(" Address: ")
             birth_date = input(" Birth Date (mm/yy/dd): ")
             note = input(" Note: ")
-            social_media = input(" Social Media (LinkedIn - @YudoTheEngineer): ")
+            social_media = input(" Social Media (SocialMedia - @username): ")
             category = input(" Category: ").lower()
             favourite = input(" Favourite (yes or no): ")
 

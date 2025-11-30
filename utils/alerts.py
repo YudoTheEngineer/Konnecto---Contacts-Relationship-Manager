@@ -67,3 +67,18 @@ def yes_no_alert():
     print(" It's a yes or no question. ")
     clear_screen()
     timer()
+
+def file_not_found_alert():
+    print(" File contacts.json is not exist. ")
+    clear_screen()
+    timer()
+
+def decode_error_alert():
+    print(" File contacts.json is corrupted. ")
+    clear_screen()
+    timer()
+
+def no_contact_alert():
+    print(" There is no a contact yet. ")
+    clear_screen()
+    timer()

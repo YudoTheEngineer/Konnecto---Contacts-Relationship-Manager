@@ -20,7 +20,7 @@ def main_menu():
 |   Contact CRUDS   |     Options     |
 =======================================
 | 1. Create         | 6. Category     |
-| 2. Read           | 7. Favorite     |
+| 2. Read           | 7. Favourite    |
 | 3. Update         | 8. Interaction  |
 | 4. Delete         | 9. Reminder     |
 | 5. Search         | 10. Download    |

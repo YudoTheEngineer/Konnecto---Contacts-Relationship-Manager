@@ -1,6 +1,7 @@
 # User Interfaces
 from ui.main_menu import main_menu
 from ui.create import create_form
+from ui.read import read_contacts
 
 # Models
 from models.contact import Contact
@@ -15,6 +16,8 @@ from utils.loading_text import *
 
 # JSON File Path
 JSON_PATH = "database/contacts.json"
+
+# Validation Database
 init_database(JSON_PATH)
 
 # Main Loop
@@ -42,6 +45,20 @@ while True:
 
             # Loading Text
             loading(" Saving Contact")
+        
+        case 2:
+            # Loading Text
+            loading(" To Read Contacts")
+
+            # Contacts List
+            read_contacts(JSON_PATH)
+
+        case 3:
+            # Loading Text
+            loading(" To Update Form")
+
+            # Contact List
+            contacts_list(JSON_PATH)
 
         case 12:
             # Loading Text

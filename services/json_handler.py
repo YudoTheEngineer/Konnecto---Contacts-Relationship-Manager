@@ -29,6 +29,11 @@ def load_database(JSON_PATH):
 
 def save_to_database(JSON_PATH, contact_data):
     contacts = load_database(JSON_PATH)
+    new_id = 1
+    if contacts:
+        new_id = max(c.get("id", 0) for c in contacts) + 1
+    
+    contact_data["id"] = new_id
     contacts.append(contact_data)
     with open(JSON_PATH, "w") as file:
         json.dump(contacts, file, indent=4)
